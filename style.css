@@ -1,0 +1,171 @@
+h1,
+h2,
+p,
+body,
+ul {
+    margin: 0;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* styles */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9fafc;
+}
+header {
+    padding: 10px;
+}
+main {
+    padding: 10px;
+}
+footer {
+    background-color: rgba(247, 193, 162, 0.7);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    padding: 5px 10px;
+    /* without box sizing: border-box, padding and borders will be excluded from the dimensions of the element (width: 100%) */
+    box-sizing: border-box;
+}
+.description {
+    border-left: 2px #69696a solid;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+header ul {
+    margin: 10px;
+}
+footer li {
+    justify-content: space-between;
+    margin: 0 5px;
+}
+header li {
+    margin: 10px 0;
+}
+
+
+main .buttons {
+    margin: 20px 0;
+}
+
+.buttons {
+    color: #FFF;
+    background-color: #000;
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 0;
+}
+a {
+    color:#69696a;
+}
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 16px;
+    margin: 0 10px;
+}
+h2 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+h3 {
+    font-size: 16px;
+    margin: 0;
+}
+.circles {
+    visibility: hidden;
+    position: relative;
+}
+
+
+/* always keep at bottom of css
+mobile-first development */
+@media only screen and (min-width: 768px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-right: 10px;
+    }
+    .header-nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-nav li{
+        margin: 0 5px;
+    }
+
+    h1{
+        display: flex;
+        text-align: left;
+        left: 0;
+        justify-content: start;
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+    .circles {
+        visibility: visible;  
+        float: right; 
+        height: 400px;
+        width: 400px;
+    }
+    .text-areas {
+        float: left;
+        width: 50%;
+    }
+    .circle {
+        border-radius: 50%;
+    }
+    .big {
+        background-color: rgba(247, 136, 167, 0.6);
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+    .medium {
+        background-color: rgba(247, 193, 162, 0.7);
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    .small {
+        background-color:  rgba(207, 130, 213, 0.6);
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        right: 0;
+        top: 20%;
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
